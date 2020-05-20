@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.5.RELEASE")
+    }
+}
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'groovy'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.springframework.boot'
+mainClassName = 'bin2dec.App'
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.13'
+    compile"org.springframework.boot:spring-boot-starter-web"
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    testCompile 'org.spockframework:spock-spring:1.1-groovy-2.4'
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+}
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+bootJar {
+    baseName = 'gs-spring-boot'
+    version =  '0.1.0'
+}

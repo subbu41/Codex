@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/bin2dec.iml" filepath="$PROJECT_DIR$/.idea/bin2dec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bin2dec.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bin2dec.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bin2dec.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bin2dec.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../checkCode.iml" filepath="$PROJECT_DIR$/../checkCode.iml" />
     </modules>
   </component>
 </project>
