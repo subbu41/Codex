@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Start-Class: bin2Dec.App
+Main-Class: org.springframework.boot.loader.JarLauncher
+
